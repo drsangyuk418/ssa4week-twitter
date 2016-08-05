@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>User Info</h3>
+
+User ID: <input type="text" id="myid"><br/>
+User Name: <input type="text" id="username"></br>
+User Phone Number: <input type="text" id="userphone"></br>
+<p>Click the "Finish" button to get the user info typed.</p>
+
+<button onclick="userFunction('myid','username','userphone')">Finish it</button>
+<p id="demo"></p>
+
+<script> 
+function userFunction(id1,id2,id3) {
+    var txt="";  
+
+    txt+="User ID  :        "+ document.getElementById(id1).value+" <br/>";
+    txt+="User Name:       "+ document.getElementById(id2).value+" <br/>";
+    txt+="User Phone Number:"+ document.getElementById(id3).value+" <br/>";
+	
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
