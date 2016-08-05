@@ -11,6 +11,12 @@ function validateLogin(name,password) {
 
 function checkLoginCredentials() {
 	
+	// Remove any previous login messages
+	
+	var loginMessageDiv = document.getElementById("loginMessage");
+	
+	loginMessageDiv.innerHTML = '';
+	
 	var loginName = document.getElementById('userName').value;
 	
 	var loginPassword = document.getElementById('userPassword').value;
@@ -21,15 +27,23 @@ function checkLoginCredentials() {
 	
 	if (isLoginSuccessful === true) {
 		
+		loginMessageDiv.innerHTML = 'Login is successful';
+		
 	} else { // user name or password not recognized
 		
-		
+		loginMessageDiv.innerHTML = 'Login name or password is not matched.';
 		
 	}	
 }
 
 function createNewUserAccount() {
 	
-	// Add AJAX call
+	// Remove any previous login messages
+	
+	var loginMessageDiv = document.getElementById("loginMessage");
+	
+	loginMessageDiv.innerHTML = '';
+	
+	// Add AJAX call to add new user
 	
 }
