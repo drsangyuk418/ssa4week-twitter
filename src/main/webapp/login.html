@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SSA 4 Week Twitter Clone</title>
+</head>
+<body>
+
+<div id="userInfoDiv">
+
+	<p>Welcome to SSA 4 Week Twitter Clone.</p>
+	
+	<p>Enter User Name and Password.</p>
+
+	<div id="userNameDiv">
+
+		<label for="userName">User Name</label>
+		<input id="userName" type="text"/>
+
+	</div>
+	
+	<div id="userPasswordDiv">
+
+		<label for="userPassword">Password</label>
+		<input id="userPassword" type="password"/>
+
+	</div>
+	
+	<button id="submitButton" onclick="checkLoginCredentials()">Submit</button>
+	
+	<button id="createNewUserButton" onclick="createNewUserAccount()">Create New Account</button>
+
+</div>
+
+<div id="loginMessage"></div>
+
+</body>
+<script src="login.js"></script>
+</html>
