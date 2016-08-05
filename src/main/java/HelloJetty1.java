@@ -10,7 +10,7 @@ import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.handler.AbstractHandler;
 
-public class HelloJetty extends AbstractHandler {
+public class HelloJetty1 extends AbstractHandler {
 
 	@Override
     public void handle(String target, Request baseRequest, HttpServletRequest request, 
@@ -37,7 +37,7 @@ public class HelloJetty extends AbstractHandler {
 
         server.start();
         server.join();
-         
+          
     }
 
 }
